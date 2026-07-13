@@ -1,5 +1,9 @@
+
 🎬 React Movie App
 A responsive movie discovery application built with React, TypeScript, Vite, Bootstrap, and the TMDB API. The application allows users to browse movies, search by title, filter by genre, sort results, manage favorites, and view detailed movie information.
+=======
+# 🎬 Movie Explorer
+>>>>>>> 9463782 (Enhance README with additional images)
 
 🚀 Features
 🔍 Search movies by title
@@ -51,8 +55,11 @@ cd react-movie-app
 npm install
 
 npm run dev
+
 🔑 Environment Variables
 Create a .env file in the project root.
+=======
+```
 
 VITE_TMDB_API_KEY=your_api_key
 VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
