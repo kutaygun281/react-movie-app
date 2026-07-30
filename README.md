@@ -1,75 +1,113 @@
-# React + TypeScript + Vite
+# 🎬 React Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive movie discovery application built with **React**, **TypeScript**, **Vite**, **Bootstrap**, and the **TMDB API**. The application allows users to browse movies, search by title, filter by genre, sort results, manage favorites, and view detailed movie information.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🔍 Search movies by title
+* 🎭 Filter movies by genre
+* 📊 Sort movies by popularity, rating, or release date
+* ❤️ Add and remove favorite movies
+* 📑 Movie details displayed in an Offcanvas panel
+* 📋 Favorites list displayed in an Offcanvas panel
+* 🔔 Toast notification when adding favorites
+* 📱 Fully responsive design
+* ⚡ Debounced search for improved performance
+* 💾 Favorites persisted with Local Storage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Vite
+* React Bootstrap
+* SCSS
+* React Router
+* TMDB API
+* Vitest
+* React Testing Library
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧪 Testing
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The project includes unit and component tests using **Vitest** and **React Testing Library**.
 
+### Components Tested
+
+* MovieCard
+* AppNavBar
+* MovieOffcanvas
+* FavoritesOffcanvas
+* FavoriteToast
+* FavoriteList
+* Home (API integration)
+
+### Test Coverage
+
+* Component rendering
+* User interactions
+* Event handlers
+* Conditional rendering
+* API mocking
+* Loading states
+* Error handling
+* React Router integration
+* Local state behavior
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/kutaygun281/react-movie-app.git
+
+cd react-movie-app
+
+npm install
+
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔑 Environment Variables
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Create a `.env` file in the project root.
 
+```env
+VITE_TMDB_API_KEY=your_api_key
+VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
 ```
+
+You can obtain an API key from **The Movie Database (TMDB)**.
+
+---
+
+## 📚 What I Learned
+
+During this project I practiced:
+
+* React Hooks (`useState`, `useEffect`)
+* TypeScript interfaces and type safety
+* API integration with Fetch
+* Component-based architecture
+* State management
+* Responsive UI development
+* Local Storage
+* Unit testing with Vitest
+* Component testing with React Testing Library
+
+---
+
+## 👨‍💻 Author
+
+**Kutay Gun**
+
+GitHub: https://github.com/kutaygun281
+<img width="365" height="795" alt="Ekran görüntüsü 2026-07-13 181333" src="https://github.com/user-attachments/assets/ba4bfc8f-3c70-4a10-a195-daba8b75e31d" />
+<img width="1647" height="892" alt="Ekran görüntüsü 2026-07-13 181247" src="https://github.com/user-attachments/assets/2f50bcdd-224a-4114-ae4b-6cd592ef2126" />
