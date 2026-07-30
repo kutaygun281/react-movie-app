@@ -133,11 +133,6 @@ function Home() {
     setShowToast(true);
   }
 
-  function removeLastMovie() {
-    const liste: Movie[] = [...movieList];
-    liste.pop();
-    setMovieList(liste);
-  }
 
   function removeFavorite(fav: Movie) {
 
@@ -205,9 +200,7 @@ function Home() {
           favorites={favorites}
           removeFavorite={removeFavorite}
         ></FavoritesOffcanvas>
-        <div>
-          <button onClick={removeLastMovie}>Son filmi sil</button>
-        </div>
+
         <div>
           <button disabled={page === 1} onClick={() => setPage(page - 1)}>Previous</button>
           <span>Page {page} / {totalPages} </span>
