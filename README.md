@@ -107,7 +107,9 @@ During this project I practiced:
 ## 👨‍💻 Author
 
 **Kutay Gun**
-
 GitHub: https://github.com/kutaygun281
+
+
 <img width="365" height="795" alt="Ekran görüntüsü 2026-07-13 181333" src="https://github.com/user-attachments/assets/ba4bfc8f-3c70-4a10-a195-daba8b75e31d" />
+<br>
 <img width="1647" height="892" alt="Ekran görüntüsü 2026-07-13 181247" src="https://github.com/user-attachments/assets/2f50bcdd-224a-4114-ae4b-6cd592ef2126" />
